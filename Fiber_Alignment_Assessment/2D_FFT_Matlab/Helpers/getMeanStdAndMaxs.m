@@ -24,7 +24,7 @@ function [ meansAndSTDAndMaxAndMin ] = getMeanStdAndMaxs( arrayOfResultsForEach,
         stdImg  = std(resultsSmooth);
         minVal  = min(resultsSmooth);
 
-        meansAndSTDAndMaxAndMin{index}= [meanImg,stdImg,maxValue,minVal];
+        
 
          %%%%%%%%%%%%%%%%%%%
          %
@@ -67,6 +67,7 @@ function [ meansAndSTDAndMaxAndMin ] = getMeanStdAndMaxs( arrayOfResultsForEach,
         potencyDens =  normalized_Area/normalized_width;
         
         
+        meansAndSTDAndMaxAndMin{index}= [meanImg,stdImg,maxValue,minVal,potencyDens];
         
         disp(['Area Below Peak: ',num2str(areaBelowPeak),' Total Area: ',num2str(totalAreaBelowTheCurve) ]);
         disp(['width Below Peak: ',num2str(separationInXAxis),' Total Width: ',num2str(nEleResultsSmooth) ]);

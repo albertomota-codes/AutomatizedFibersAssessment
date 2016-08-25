@@ -1,7 +1,7 @@
 function [ arrayOfImages ] = openImagesOnRobinFolder( folder_name,limited )
 %OPENIMAGESONROBINFOLDER Summary of this function goes here
 %   Detailed explanation goes here
-    root = 'G:\Desktop\QMUL\Disertation\MatlabSoftware\V1\MatlabFiberAlignment\FiberImages\RobinImages\';
+    root = '..\FiberImages\RobinImages\';
     
     dirText = strcat(root,folder_name,'/');
     
